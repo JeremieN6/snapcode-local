@@ -1416,6 +1416,10 @@ textarea + .err-msg {
      object-fit: cover;
 }
 
+.no-height{
+  height: auto !important;
+}
+
 @media (max-width: 991px) {
   .modal.product-modal .modal-img {
     padding: 5rem 5rem 0;
@@ -1772,7 +1776,7 @@ textarea + .err-msg {
 }
 
 .price {
-  font-size: 10rem;
+  font-size: 7rem;
   line-height: 1;
   font-weight: 400;
   color: #fc7c56;
@@ -1780,7 +1784,11 @@ textarea + .err-msg {
   display: inline-block;
   margin: 2rem auto;
 }
-
+span.price-option {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
 .price sup,
 .price sub {
   font-size: 2.4rem;

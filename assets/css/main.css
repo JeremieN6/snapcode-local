@@ -1085,6 +1085,8 @@ textarea + .err-msg {
   line-height: 2.4rem;
   color: #fff;
   font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center; 
 }
 
 .counter-wrapper br {

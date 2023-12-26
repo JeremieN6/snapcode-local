@@ -13,24 +13,24 @@
 
     <!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@Cynic">
-	<meta name="twitter:creator" content="@Cynic">
-	<meta name="twitter:title" content="Cynic">
-	<meta name="twitter:description" content="Cynic Illustrated Small Digital Agency">
-	<meta name="twitter:image" content="http://axilthemes.com/templates/cynic/illustrated-small-digital-agency/assets/images/brand-logo.svg">
+	<meta name="twitter:site" content="@JeremieCode">
+	<meta name="twitter:creator" content="@JeremieCode">
+	<meta name="twitter:title" content="JeremieCode">
+	<meta name="twitter:description" content="JeremieCode Digital Agency">
+	<meta name="twitter:image" content="assets/images/brand-logo.svg">
 	<!-- Facebook -->
 	<meta property="og:url" content="">
-	<meta property="og:title" content="Cynic">
-	<meta property="og:description" content="Cynic Illustrated Small Digital Agency">
+	<meta property="og:title" content="JeremieCode">
+	<meta property="og:description" content="JeremieCode Digital Agency">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="http://axilthemes.com/templates/cynic/illustrated-small-digital-agency/assets/images/brand-logo.svg">
+	<meta property="og:image" content="assets/images/brand-logo.svg">
 	<meta property="og:image:secure_url" content="">
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
 
     <!-- Page Title -->
-    <title>Cynic || Illustrated Small Digital Agency</title>
+    <title>JeremieCode Agency</title>
 
     <!-- links for favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
@@ -123,7 +123,8 @@
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="custom-btn btn-small" data-toggle="modal" data-target="#quote-modal">Prendre un RDV</a>
+                        <!--<a href="#" class="custom-btn btn-small" data-toggle="modal" data-target="#quote-modal">Prendre un RDV</a>-->
+                        <a href="" class="custom-btn btn-small" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ngoyi-jeremie-pro/appel-d-information-jeremiecode-1er-contact?hide_gdpr_banner=1'});return false;">Prendre un RDV</a>
                     </li>
                 </ul>
             </div>
@@ -146,7 +147,7 @@
                     Transformez votre présence en ligne avec des sites web rapides 
                     et des intégrations personnalisées afin d'atteindre enfin vos objectifs et d'aller chercher toujours plus loin.
                 </p>
-                <a href="#cynic-projects" class="custom-btn secondary-btn">Nous contacter</a>
+                <a href="" class="custom-btn secondary-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ngoyi-jeremie-pro/appel-d-information-jeremiecode-1er-contact?hide_gdpr_banner=1'});return false;">Prendre un RDV</a>
                 
             </div>
             <!-- End of .col-lg-5 -->
@@ -250,7 +251,7 @@
                     <!-- End of .col-lg-4 -->
                     
                     <div class="col-xl-4 col-lg-6">
-                        <a href="web_dev_personalized.html" class="service-block text-center">
+                        <a href="web-dev-personalized.html" class="service-block text-center">
                             <img src="assets/images/services/service-icon-2-1.png" alt="undefined">
                             <h4>Développement de site web personnalisé</h4>
                             <p>Nous concevons des sites Web simples et d'aspect professionnel. Nos conceptions sont spécifiquement adaptées pour les moteurs de recherche et vos clients.</p>
@@ -538,21 +539,34 @@
                     <li>Ou encore, vous êtes une entreprise déjà établie, une agence et vous rencontrez des soucis de délivrabilité sur le développement de pages web spécifiques.</li>
                 </ul>
               </div>
-        <form action="#" class="newsletter-form" method="POST">
-            <div class="row justify-content-between">
-                <div class="col-md">
-                    <input type="text" name="fname" placeholder="Nom">
-                </div>
-                <div class="col-md">
-                    <input type="text" name="email" placeholder="Email">
-                </div>
 
-                <div class="col-md-auto">
-                    <a href="#" class="custom-btn secondary-btn">Prendre un RDV</a>
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <!-- Début de widget de lien Calendly -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                            <a href="" class="custom-btn secondary-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ngoyi-jeremie-pro/appel-d-information-jeremiecode-1er-contact?hide_gdpr_banner=1'});return false;">Prendre un RDV</a>
+                        <!-- Fin de widget de lien Calendly -->
+                    </div>
                 </div>
-            </div>
-            <!-- End of .row -->
-        </form>
+              </div>
+
+              
+            <!--<form action="#" class="newsletter-form" method="POST">
+                <div class="row justify-content-between">
+                    <div class="col-md">
+                        <input type="text" name="fname" placeholder="Nom">
+                    </div>
+                    <div class="col-md">
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="col-md-auto">
+                        <a href="#" class="custom-btn secondary-btn">Prendre un RDV</a>
+                    </div>
+                </div>
+            </form>-->
             <!-- End of .newsletter-form -->
 
         <!-- <div class="social-icons-wrapper d-flex justify-content-center">

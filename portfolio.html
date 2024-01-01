@@ -123,7 +123,9 @@
                             <a href="contact.html" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="custom-btn btn-small" data-toggle="modal" data-target="#quote-modal">Prendre un RDV</a>                        </li>
+                            <!--<a href="#" class="custom-btn btn-small" data-toggle="modal" data-target="#quote-modal">Prendre un RDV</a>-->
+                            <a href="" class="custom-btn btn-small" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ngoyi-jeremie-pro/appel-d-information-jeremiecode-1er-contact?hide_gdpr_banner=1'});return false;">Prendre un RDV</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- End of .navbar-nav -->
@@ -194,7 +196,7 @@
 
                     <div class="col-lg-4 col-md-6 ">
                         <a href="portfolio.html" class="img-card text-center portfolio-card white-bg light-grey-bg"
-                            data-toggle="modal" data-target="#product-modal-3">
+                            data-toggle="modal" data-target="#product-modal-03">
                             <img src="assets/images/products/project-client-3-2.png" alt="product" class="img-fluid">
                             <h4>
                                 <span>Plateforme de Streaming</span>Développement de site personnalisé</h4>
@@ -205,7 +207,7 @@
 
                     <div class="col-lg-4 col-md-6 ">
                         <a href="portfolio.html" class="img-card text-center portfolio-card white-bg light-grey-bg"
-                            data-toggle="modal" data-target="#product-modal-4">
+                            data-toggle="modal" data-target="#product-modal-04">
                             <img src="assets/images/products/project-client-6.png" alt="product" class="img-fluid">
                             <h4>
                                 <span>Site de Consultation de Cryptomonnaie</span>Développement de site personnalisé</h4>
@@ -317,7 +319,7 @@
 
                     <div class="col-lg-4 col-md-6 item category-a">
                         <a href="portfolio.html" class="img-card text-center portfolio-card white-bg light-grey-bg"
-                            data-toggle="modal" data-target="#product-modal-7">
+                            data-toggle="modal" data-target="#product-modal-04">
                             <img src="assets/images/products/project-client-6.png" alt="product" class="img-fluid">
                             <h4>
                                 <span>Site de Consultation de Cryptomonnaie</span>Développement de site personnalisé</h4>
@@ -508,7 +510,7 @@
         <!-- End of .portfolio-modal -->
 
         <!-- Product Modal Starts -->
-        <div class="modal fade full-width-modal product-modal" id="product-modal-3" tabindex="-1" role="dialog"
+        <div class="modal fade full-width-modal product-modal" id="product-modal-03" tabindex="-1" role="dialog"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -524,22 +526,33 @@
                     <div class="row no-gutters">
                         <div class="col-lg-6">
                             <div class="modal-img text-center">
-                                <img src="assets/images/products/portfolio-modal-1.png" alt="product-modal"
-                                    class="img-fluid">
+                                <img src="assets/images/products/portfolio-modal-3-2.png" alt="product-modal"
+                                    class="img-fluid no-height">
                             </div>
                         </div>
 
                         <div class="col-lg-6">
                             <div class="modal-body__inner-content">
                                 <h4>
-                                    <span>Développement de site personnalisé (Focus Responsive Design)</span>
-                                    Site web  : Agence de développement web
+                                    <span>Développement de site web personnalisé</span>
+                                    Plateforme de Streaming
                                 </h4>
-                                <p>Pour notre client, une petite agence de web marketing dynamique, nous avons conçu un site web sur mesure qui incarne son expertise distincte dans le domaine. Chaque élément, de la disposition visuelle aux fonctionnalités interactives, a été minutieusement élaboré pour refléter l'énergie innovante de l'agence et mettre en avant ses services de marketing digital.</p>
+                                <p>
+                                    Pour notre client passionné de cinéma indépendant et d'animations, 
+                                    nous avons créé un site web de streaming exceptionnel. <br>
+                                    Spécialisé dans la diffusion de séries et de films produits par des indépendants dans des niches 
+                                    spécifiques, ce site offre une expérience immersive unique, mettant en lumière des contenus exclusifs
+                                    et captivants.</p>
 
-                                <p>Notre approche sur mesure a permis de créer une plateforme en ligne qui va au-delà de la simple présentation, offrant une expérience immersive pour les visiteurs. Le site incarne la philosophie de l'agence, captivant instantanément l'audience tout en fournissant des informations claires sur les services proposés. Une vitrine digitale qui renforce la crédibilité de notre client et génère un impact significatif dans le monde en ligne.</p>
-                                    <p>Le client tient à garder 100% de visibilité sur la clarté de son traffic. Ainsi le lien vers la page est un mirroir, et non le site final.</p>
-                                <a href="https://the-homepage-challenge.netlify.app" class="hyperlink">Voir le site web</a>
+                                <p>
+                                    Notre équipe a conçu une plateforme conviviale, permettant aux utilisateurs de découvrir des œuvres
+                                    cinématographiques authentiques et peu explorées. 
+                                    Avec des fonctionnalités de recherche avancées et une interface intuitive, 
+                                    ce site de streaming incarne l'engagement de notre client envers la diversité et l'originalité du 
+                                    cinéma indépendant, offrant aux spectateurs une expérience inégalée.
+                                </p>
+                                <p>Le client tient à garder 100% de visibilité sur la clarté de son traffic. Ainsi le lien vers la page n'est pas disponible.</p>
+                                <!--<a href="#" class="hyperlink">Voir le site web</a>-->
                             </div>
                         </div>
                     </div>
@@ -623,25 +636,14 @@
                         <div class="col-lg-6">
                             <div class="modal-body__inner-content">
                                 <h4>
-                                    <span>Développement de site web personnalisé</span>
-                                    Plateforme de Streaming
+                                    <span>Développement de site personnalisé (Focus Responsive Design)</span>
+                                    Site web : Agence de développement web
                                 </h4>
-                                <p>
-                                    Pour notre client passionné de cinéma indépendant et d'animations, 
-                                    nous avons créé un site web de streaming exceptionnel. <br>
-                                    Spécialisé dans la diffusion de séries et de films produits par des indépendants dans des niches 
-                                    spécifiques, ce site offre une expérience immersive unique, mettant en lumière des contenus exclusifs
-                                    et captivants.</p>
+                                <p>Pour notre client, une petite agence de web marketing dynamique, nous avons conçu un site web sur mesure qui incarne son expertise distincte dans le domaine. Chaque élément, de la disposition visuelle aux fonctionnalités interactives, a été minutieusement élaboré pour refléter l'énergie innovante de l'agence et mettre en avant ses services de marketing digital.</p>
 
-                                <p>
-                                    Notre équipe a conçu une plateforme conviviale, permettant aux utilisateurs de découvrir des œuvres
-                                    cinématographiques authentiques et peu explorées. 
-                                    Avec des fonctionnalités de recherche avancées et une interface intuitive, 
-                                    ce site de streaming incarne l'engagement de notre client envers la diversité et l'originalité du 
-                                    cinéma indépendant, offrant aux spectateurs une expérience inégalée.
-                                </p>
-                                <p>Le client tient à garder 100% de visibilité sur la clarté de son traffic. Ainsi le lien vers la page n'est pas disponible.</p>
-                                <!--<a href="#" class="hyperlink">Voir le site web</a>-->
+                                <p>Notre approche sur mesure a permis de créer une plateforme en ligne qui va au-delà de la simple présentation, offrant une expérience immersive pour les visiteurs. Le site incarne la philosophie de l'agence, captivant instantanément l'audience tout en fournissant des informations claires sur les services proposés. Une vitrine digitale qui renforce la crédibilité de notre client et génère un impact significatif dans le monde en ligne.</p>
+                                    <p>Le client tient à garder 100% de visibilité sur la clarté de son traffic. Ainsi le lien vers la page est un mirroir, et non le site final.</p>
+                                <a href="https://the-homepage-challenge.netlify.app" class="hyperlink">Voir le site web</a>
                             </div>
                         </div>
                     </div>
@@ -747,6 +749,99 @@
    </div>
    <!-- End of .portfolio-modal -->
 
+       <!-- Product Modal Starts -->
+       <div class="modal fade full-width-modal product-modal" id="product-modal-04" tabindex="-1" role="dialog"
+       aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <i class="fas fa-times"></i>
+                   </button>
+                   <!-- End of .close -->
+               </div>
+               <!-- End of .modal-header -->
+
+               <div class="modal-body">
+                   <div class="row no-gutters">
+                       <div class="col-lg-6">
+                           <div class="modal-img text-center">
+                               <img src="assets/images/products/portfolio-modal-6.png" alt="product-modal"
+                                   class="img-fluid no-height">
+                           </div>
+                       </div>
+
+                       <div class="col-lg-6">
+                           <div class="modal-body__inner-content">
+                               <h4>
+                                   <span>Développement de site web personnalisé</span>
+                                   Site de Consultation de Cryptomonnaie
+                               </h4>
+                               <p>
+                                   Face à la demande croissante d'informations fiables sur les cryptomonnaies, notre client cherchait un site web informatif et intuitif. Nous avons relevé le défi en créant un site dynamique offrant des analyses en temps réel, des guides détaillés et des actualités et un panneau de visualisations des devises selectionnées du monde des cryptomonnaies, répondant ainsi aux attentes d'une audience avide d'informations précises.</p>
+
+                               <p>
+                                   Pour garantir une expérience utilisateur optimale, nous avons intégré des outils de visualisation de données en temps réel et des fonctionnalités interactives. Ce site sur les cryptomonnaies offre non seulement des informations claires et concises, mais également une plateforme engageante pour tous les passionnés et investisseurs. Notre approche centrée sur l'utilisateur et notre utilisation astucieuse de la technologie font de ce site un incontournable pour ceux qui souhaitent rester informés dans le monde en constante évolution des cryptomonnaies.
+                               </p>
+                               <p>Le client tient à préserver son anonymat et celui de son projet pour le moment. Ainsi le lien vers la page n'est qu'une maquette d'une des page du site final.</p>
+                               <a href="https://mockup-in-vuejs.netlify.app" class="hyperlink">Voir le site web</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- End of .modal-body -->
+           </div>
+           <!-- End of .modal-content -->
+       </div>
+       <!-- End of .modal-dialog -->
+   </div>
+   <!-- End of .portfolio-modal -->
+
+   <!-- Product Modal Starts -->
+   <div class="modal fade full-width-modal product-modal" id="product-modal-3" tabindex="-1" role="dialog"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content">
+           <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <i class="fas fa-times"></i>
+               </button>
+               <!-- End of .close -->
+           </div>
+           <!-- End of .modal-header -->
+
+           <div class="modal-body">
+               <div class="row no-gutters">
+                   <div class="col-lg-6">
+                       <div class="modal-img text-center">
+                           <img src="assets/images/products/portfolio-modal-1.png" alt="product-modal"
+                               class="img-fluid no-height">
+                       </div>
+                   </div>
+
+                   <div class="col-lg-6">
+                       <div class="modal-body__inner-content">
+                           <h4>
+                               <span>Développement de site personnalisé (Focus Responsive Design)</span>
+                               Site web : Agence de développement web
+                           </h4>
+                           <p>Pour notre client, une petite agence de web marketing dynamique, nous avons conçu un site web sur mesure qui incarne son expertise distincte dans le domaine. Chaque élément, de la disposition visuelle aux fonctionnalités interactives, a été minutieusement élaboré pour refléter l'énergie innovante de l'agence et mettre en avant ses services de marketing digital.</p>
+
+                           <p>Notre approche sur mesure a permis de créer une plateforme en ligne qui va au-delà de la simple présentation, offrant une expérience immersive pour les visiteurs. Le site incarne la philosophie de l'agence, captivant instantanément l'audience tout en fournissant des informations claires sur les services proposés. Une vitrine digitale qui renforce la crédibilité de notre client et génère un impact significatif dans le monde en ligne.</p>
+                               <p>Le client tient à garder 100% de visibilité sur la clarté de son traffic. Ainsi le lien vers la page est un mirroir, et non le site final.</p>
+                           <a href="https://the-homepage-challenge.netlify.app" class="hyperlink">Voir le site web</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- End of .modal-body -->
+       </div>
+       <!-- End of .modal-content -->
+   </div>
+   <!-- End of .modal-dialog -->
+</div>
+<!-- End of .portfolio-modal -->
+
 <!-- Quote modal starts
     ================================= -->
     <div class="modal fade full-width-modal quote-modal" id="quote-modal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -821,6 +916,18 @@
         <!-- End of .modal-dialog -->
     </div>
     <!-- End of .quote-modal -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <!-- Début de widget de lien Calendly -->
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                    <a href="" class="custom-btn secondary-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ngoyi-jeremie-pro/appel-d-information-jeremiecode™-1er-contact?hide_gdpr_banner=1'});return false;">Prendre un RDV</a>
+                <!-- Fin de widget de lien Calendly -->
+            </div>
+        </div>
+      </div>
 
 <!-- footer starts -->
 <footer class="page-footer dark-footer-bg">

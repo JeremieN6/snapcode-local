@@ -123,7 +123,9 @@
                             <a href="contact.html" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="custom-btn btn-small" data-toggle="modal" data-target="#quote-modal">Prendre un RDV</a>                        </li>
+                            <!--<a href="#" class="custom-btn btn-small" data-toggle="modal" data-target="#quote-modal">Prendre un RDV</a>-->
+                            <a href="" class="custom-btn btn-small" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ngoyi-jeremie-pro/appel-d-information-jeremiecode-1er-contact?hide_gdpr_banner=1'});return false;">Prendre un RDV</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- End of .navbar-nav -->
@@ -342,6 +344,18 @@
         <!-- End of .modal-dialog -->
     </div>
     <!-- End of .quote-modal -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <!-- Début de widget de lien Calendly -->
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                    <a href="" class="custom-btn secondary-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ngoyi-jeremie-pro/appel-d-information-jeremiecode™-1er-contact?hide_gdpr_banner=1'});return false;">Prendre un RDV</a>
+                <!-- Fin de widget de lien Calendly -->
+            </div>
+        </div>
+      </div>
 
 <!-- footer starts -->
 <footer class="page-footer dark-footer-bg">

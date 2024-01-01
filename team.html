@@ -123,7 +123,9 @@
                             <a href="contact.html" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="custom-btn btn-small" data-toggle="modal" data-target="#quote-modal">Prendre un RDV</a>                        </li>
+                            <!--<a href="#" class="custom-btn btn-small" data-toggle="modal" data-target="#quote-modal">Prendre un RDV</a>-->
+                            <a href="" class="custom-btn btn-small" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ngoyi-jeremie-pro/appel-d-information-jeremiecode-1er-contact?hide_gdpr_banner=1'});return false;">Prendre un RDV</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- End of .navbar-nav -->
@@ -337,6 +339,18 @@
     </div>
     <!-- End of .quote-modal -->
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <!-- Début de widget de lien Calendly -->
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                    <a href="" class="custom-btn secondary-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ngoyi-jeremie-pro/appel-d-information-jeremiecode™-1er-contact?hide_gdpr_banner=1'});return false;">Prendre un RDV</a>
+                <!-- Fin de widget de lien Calendly -->
+            </div>
+        </div>
+      </div>
+
 <!-- footer starts -->
 <footer class="page-footer dark-footer-bg">
     <div class="container">
@@ -447,8 +461,8 @@
                 </div>
                 <!-- End of .modal-title -->
                 <p>
-                   En tant que développeur full-stack passionné et fondateur de cette agence innovante, je m'engage à repousser les limites de la création web sur mesure. Fort de mon expertise technique approfondie, je dirige une équipe de professionnels dévoués pour offrir des solutions numériques exceptionnelles. Notre agence se distingue par son approche personnalisée, alliant une créativité avant-gardiste à une excellence technique. Nous transformons les visions en réalités digitales, offrant des sites web sur mesure qui transcendent les attentes. Chez nous, chaque ligne de code raconte une histoire de succès, et chaque projet est une opportunité de créer quelque chose d'extraordinaire pour nos clients.
-                </p>
+                    En tant que développeur full-stack passionné et fondateur de cette agence innovante, je m'engage à repousser les limites de la création web sur mesure. Fort de mon expertise technique approfondie, acquis lors de multiples collaboration avec des grandes enseignes comme <strong><em>Printemps Paris</em></strong>, <strong><em>Marionnaud Paris</em></strong> entre autres, je dirige aujourd'hui une équipe de professionnels dévoués pour offrir des solutions numériques exceptionnelles. <br><br> Notre agence se distingue par son approche personnalisée, alliant une créativité avant-gardiste à une excellence technique. Nous transformons les visions en réalités digitales, offrant des sites web sur mesure qui transcendent les attentes. Chez nous, chaque ligne de code raconte une histoire de succès, et chaque projet est une opportunité de créer quelque chose d'extraordinaire pour nos clients.
+                 </p>
 
                 <ul class="social-icons">
                     <li>
